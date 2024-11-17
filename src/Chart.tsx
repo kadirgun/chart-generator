@@ -19,8 +19,8 @@ function Chart() {
   return (
     <MantineProvider defaultColorScheme={theme || "dark"}>
       <style>{styles}</style>
-      <Center p="md" h="100vh" w="100vw">
-        <Stack align="center">
+      <Center h="100vh" w="100vw">
+        <Stack p="sm" align="center" id="chart">
           <Title size="xl">{props.title}</Title>
           <LineChart h={300} {...props} />
         </Stack>
